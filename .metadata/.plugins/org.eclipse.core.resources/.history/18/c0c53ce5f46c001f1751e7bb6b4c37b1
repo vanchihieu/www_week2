@@ -1,0 +1,58 @@
+package fit.iuh.edu.servlet;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.MultipartConfig;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.File;
+import java.io.IOException;
+
+/**
+ * Servlet implementation class FileUploadServlet
+ */
+@MultipartConfig(
+		location = "T:/fileupload",
+		fileSizeThreshold = 1024 * 1024, // 1 MB Nếu kích thước file upload lơn hơn threshold sẽ được ghi trực tiếp vào ổ đĩa thay vì lưu ở memory đệm.
+		maxFileSize = 1024 * 1024 * 5, // 5 MB Kích thước tối da của file được upload.
+		maxRequestSize = 1024 * 1024 * 10) // 10 MB Kích thước tối đa cho một request.
+public class FileUploadServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    private static String uploadPath = null;
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public FileUploadServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+    
+    @Override
+    public void init() throws ServletException {
+    	super.init();
+    	uploadPath = getServletContext().getInitParameter("upload.path");
+    	File uploadDir = new File(uploadPath);
+    	if (!uploadDir.exists()) {
+    		uploadDir.mkdirs();
+    	}
+    }
+    
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,15 @@
+127.0.0.1 - - [07/Sep/2024:16:49:41 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:49:41 +0700] "GET /Tuan2_Bai3_VanChiHieu/ HTTP/1.1" 200 662
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:49:42 +0700] "GET /favicon.ico HTTP/1.1" 404 763
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:49:53 +0700] "POST /Tuan2_Bai3_VanChiHieu/FileUploadDBServlet HTTP/1.1" 404 797
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:50:50 +0700] "GET /Tuan2_Bai3_VanChiHieu/ HTTP/1.1" 200 656
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:50:50 +0700] "GET /Tuan2_Bai3_VanChiHieu/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:50:50 +0700] "GET /Tuan2_Bai3_VanChiHieu/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:50:51 +0700] "GET /Tuan2_Bai3_VanChiHieu/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:50:56 +0700] "POST /Tuan2_Bai3_VanChiHieu/UploadServlet HTTP/1.1" 500 1265
+127.0.0.1 - - [07/Sep/2024:16:53:01 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:53:01 +0700] "GET /Tuan2_Bai3_VanChiHieu/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:53:07 +0700] "POST /Tuan2_Bai3_VanChiHieu/UploadServlet HTTP/1.1" 500 33
+127.0.0.1 - - [07/Sep/2024:16:55:27 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:55:27 +0700] "GET /Tuan2_Bai3_VanChiHieu/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [07/Sep/2024:16:55:31 +0700] "POST /Tuan2_Bai3_VanChiHieu/UploadServlet HTTP/1.1" 500 33
